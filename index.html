@@ -1,63 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Victoria 3 Guide</title>
+  <title>GitHub 연결 페이지</title>
   <style>
     body {
-      margin: 0;
-      font-family: sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #f0f0f0;
-    }
-    .container {
-      text-align: center;
-      background: white;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    p {
-      margin-bottom: 30px;
-      font-size: 1.1rem;
-      color: #444;
-    }
-    .buttons {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
     }
-    .buttons button {
+    .btn {
+      display: block;
+      width: 200px;
+      margin: 10px;
       padding: 12px 20px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      background-color: #007bff;
+      font-size: 16px;
       color: white;
-      cursor: pointer;
-      transition: background-color 0.2s;
+      background-color: #333;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
     }
-    .buttons button:hover {
-      background-color: #0056b3;
+    .btn:hover {
+      background-color: #555;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Victoria 3 가이드</h1>
-    <p>여기는 빅토리아 3에 대한 공략과 모딩 정보를 정리한 웹사이트입니다.</p>
-    <div class="buttons">
-      <button onclick="location.href='guide.html'">게임 공략</button>
-      <button onclick="location.href='modding.html'">모딩 가이드</button>
-      <button onclick="location.href='about.html'">공식 디스코드</button>
-    </div>
-  </div>
+
+  <!-- 맨 위 버튼: docs 페이지로 이동 -->
+  <a href="docs.html" class="btn">문서 보기</a>
+
+  <!-- 중간 버튼: 글씨 비워둠 -->
+  <a href="#" class="btn"></a>
+
+  <!-- 맨 아래 버튼: 디스코드 링크로 이동 -->
+  <a href="https://discord.com/invite/yourserver" target="_blank" class="btn">디스코드 참여</a>
+
 </body>
 </html>
